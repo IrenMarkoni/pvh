@@ -1,0 +1,23 @@
+section.section.callback
+  .container 
+    .callback__content 
+      .callback__info 
+        h2 Если у вас есть вопросы, можете оставить заявку на бесплатную консультацию
+        p.subtext или напишите нам в мессенджеры
+        .socials 
+          a.socials__item.socials__item_wa(href="") 
+          a.socials__item.socials__item_tg(href="")  
+          a.socials__item.socials__item_vk(href="") 
+      form.callback-form 
+        .callback-form__wrapper
+          .custom-input
+            .custom-input__icon
+              +svg("name")
+            input(type="text" name="name" placeholder="Имя")
+          .custom-input
+            .custom-input__icon
+              +svg("phone")
+            input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+          button.primary-btn(type="submit") Оставить заявку на консультацию
+          .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+

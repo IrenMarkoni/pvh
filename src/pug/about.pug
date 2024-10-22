@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'О нас';
+
+block content
+  include components/inner/about.pug
+append styles
+  +style('index.css')

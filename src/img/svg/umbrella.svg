@@ -1,0 +1,11 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="1">
+<path id="Subtract" d="M40.5 44C35.6615 44 31.3413 46.2177 28.5 49.6887C25.6587 46.2177 21.3385 44 16.5 44C12.0062 44 7.95982 45.9127 5.12967 48.966C6.66746 31.0566 21.6922 17 40 17C58.3078 17 73.3325 31.0566 74.8703 48.966C72.0402 45.9127 67.9938 44 63.5 44C58.9375 44 54.8352 45.9722 52 49.1076C49.1648 45.9722 45.0625 44 40.5 44Z" stroke="#001F49" stroke-width="2"/>
+<path id="Rectangle 318" d="M40 44V72C40 75.866 36.866 79 33 79V79C29.134 79 26 75.866 26 72V68.3333" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 3" d="M13 8V16.5" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 4" d="M40 0V8.5" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 8" d="M53 7V15.5" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 7" d="M29 13V18.5" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 5" d="M70 12V20.5" stroke="#001F49" stroke-width="2"/>
+</g>
+</svg>

@@ -1,0 +1,73 @@
+- let breadcrumb = ["Главная", "Материалы", "Пленки ПВХ (мягкое стекло)", "Прозрачная плёнка ПВХ 700 мкм"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Прозрачная плёнка ПВХ 700 мкм
+section.section.product 
+  .container 
+    .product__content 
+      .product__slider 
+        .swiper-wrapper 
+          .swiper-slide 
+            +img("material/1.png")
+          .swiper-slide 
+            +img("material/2.png")
+          .swiper-slide 
+            +img("material/3.png")
+        .product__slider-bottom
+          .swiper-button-prev
+          .swiper-pagination
+          .swiper-button-next
+
+      .product__info
+        .product__info-table
+          .product__info-row 
+            .product__info-col 
+              span Материал
+            .product__info-col 
+              span поливинилхлорид
+          .product__info-row 
+            .product__info-col 
+              span Толщина
+            .product__info-col 
+              span 700 микрон
+          .product__info-row 
+            .product__info-col 
+              span Температурный режим
+            .product__info-col 
+              span - 25/- 35°С (паспорт)
+          .product__info-row 
+            .product__info-col 
+              span Светопропускание
+            .product__info-col 
+              span 90%
+          .product__info-row 
+            .product__info-col 
+              span Ширина в рулоне
+            .product__info-col 
+              span 1,4 м; 1,8 м; 2,0 м
+          .product__info-row 
+            .product__info-col 
+              span Намотка
+            .product__info-col 
+              span 40 м
+          .product__info-row 
+            .product__info-col 
+              span % пластификатора
+            .product__info-col 
+              span 50-55 phr
+          .product__info-row 
+            .product__info-col 
+              span Защита от УФ
+            .product__info-col 
+              span да
+        .product__info-bottom
+          .product__info-block 
+            label Цена:
+            .product__info-price от #[span 1 400,00] руб./м2
+          a.primary-btn.primary-btn_arrow Смотреть цены
+    .product__description
+      h3 Описание
+      p Термопластичный полиуретан — материал исключительно прочный, износостойкий, обладающий высокой резистентностью к температурному и химическому воздействию — и одновременно эластичный, легкий, приятный на ощупь. Этот материал используется для уменьшения массы готовой конструкции. Изделия не теряют гибкость даже при экстремальных морозах — 60°C, не плавятся при нагревании до + 80°C.
+
+include ../callback

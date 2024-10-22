@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Продукция';
+
+block content
+  include components/inner/categories.pug
+append styles
+  +style('index.css')

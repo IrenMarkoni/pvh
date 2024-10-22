@@ -1,0 +1,143 @@
+- let breadcrumb = ["Главная", "Продукция", "Мобильные шатры"];
+section.template-top 
+  .container 
+    .template-top__content
+      +breadcrumbs(breadcrumb) 
+      h1 Мобильные шатры
+      p Мобильные шатры - это конструкции из металлического каркаса, крыша которого покрыта тканью Оксфорд (Oxford 450/600 Den PU, полиэстер с пропиткой), такие шатры предназначены для организации мероприятий на свежем воздухе. Они часто используются для проведения свадеб, корпоративов, выставок, ярмарок и других событий. #[br] Одним из главных преимуществ таких шатров является их мобильность. Во время организации мероприятий на открытом пространстве, например в парке, поле или на пляже - это идеальнй выбор, так как эти конструкции можно быстро и легко установить и демонтировать.
+      .template-top__btns
+        a.primary-btn Стоимость от
+        a.secondary-btn(href="calculator.html") Калькулятор
+    .template-top__img
+      +img("product2.png")
+section.expert
+  .container 
+    .expert__content
+      .expert__top
+        h3 Спросите эксперта
+        span Оставьте заявку на бесплатную консультацию специалиста:
+      form.callback-form 
+        .custom-input
+          .custom-input__icon
+            +svg("name")
+          input(type="text" name="name" placeholder="Имя")
+        .custom-input
+          .custom-input__icon
+            +svg("phone")
+          input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+        button.primary-btn(type="submit") Проконсультироваться
+        .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+section.section.types
+  .container
+    h2 Модельный ряд 
+    .types__table 
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+      .types-card
+        +img("tent.png")
+        .types-card__info 
+          a.types-card__title(href="") Мобильные шатры 3х3м →
+          .types-card__price от 59 000 ₽
+        .types-card__bottom 
+          a.primary-btn Купить
+          a.secondary-btn Арендовать
+
+section.section.questions 
+  .container 
+    .accordeon 
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Особенности
+        .accordeon__body
+          p Гибкие ПВХ окна представляют собой своеобразные натяжные шторы, основным материалом в которых вместо ткани выступает поливинилхлорид (известный в народе, как ПВХ-пленка), данное изделие имеет в своем арсенале ряд приятных особенностей, подчеркивающих их необходимость:
+          ul 
+            li Высокая прочность на растяжение и разрыв — ПХВ-пленка толщиной 500, 700, 1000 и 2000 мкм выдерживает даже сильные порывы ветра и ливень любой интенсивности.
+            li Не выгорают на солнце.
+            li Безопасность и ремонтопригодность. Мягкие окна невозможно разбить, а прорванные или прорезанные участки полотна всегда можно заменить, что немаловажно при наличии детей.
+            li Быстрый монтаж/демонтаж. Конструкция позволяет устанавливать или убирать их в считанные минуты.
+            li Эстетичный внешний вид и близость к окружающей среде. Мягкие гибкие окна не скрывают конструкцию, прозрачны (пропускают более 90% света). Широкая цветовая гамма окантовок позволяет гармонично вписать такое остекление в любой интерьер.
+          p Мы предлагаем пленки разной плотности: 500 - 2000 микрон. Следует понимать, что чем плотнее окно, тем прочнее и функциональнее оно будет. Но не стоит забывать и об обратной стороне медали – душной обстановке в помещении с плотными занавесями в летний жаркий период.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Плюсы и минусы
+        .accordeon__body
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Где используются?
+        .accordeon__body
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Крепление и монтаж
+        .accordeon__body
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate dolore quibusdam neque eveniet aspernatur, repellat optio obcaecati, unde odit ipsam, ea officiis saepe sunt magni. Qui natus aspernatur similique quas?
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Что будет с мягкими окнами зимой?
+        .accordeon__body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum quibusdam fugiat! Est ipsam, animi hic labore modi veritatis obcaecati quo in ullam nobis molestiae unde mollitia officiis eaque atque?
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Где производится используемая нами пвх-пленка?
+        .accordeon__body
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, eos? Natus est quibusdam cum atque illo, blanditiis dolores ipsum nisi exercitationem quisquam iusto, a perferendis fugiat recusandae itaque, necessitatibus vitae.
+include ../callback

@@ -1,0 +1,53 @@
+form#regForm.steps-form
+  .steps
+    .steps__line
+    .steps__wrapper
+
+      span.step 1
+      span.step 2
+      span.step 3
+  .steps-form__tab
+    .custom-input
+      .custom-input__icon
+        +svg("name")
+      input(type="text" name="name" placeholder="Контактное лицо" required)
+    .custom-input
+      .custom-input__icon
+        +svg("phone")
+      input(type="text" name="phone" placeholder="Телефон" data-tel-input required)
+    .custom-input
+      .custom-input__icon
+        +svg("e-mail")
+      input(type="email" name="email" placeholder="E-mail" required)
+  .steps-form__tab
+    .custom-input
+      .custom-input__icon
+        +svg("pin")
+      input(type="text" name="city" placeholder="Ваш регион, город" required)
+    .custom-input
+      .custom-input__icon
+        +svg("job")
+      input(type="text" name="job" placeholder="Основная сфера деятельности" required)
+    .custom-input
+      .custom-input__icon
+        +svg("name")
+      input(type="text" name="organization" placeholder="Действующее юридическое лицо или ИП" required)
+  .steps-form__tab
+    .custom-input
+      .custom-input__icon
+        +svg("message")
+      textarea(name="preferred-city" placeholder="Укажите регионы, в которых хотели бы работать" required)
+    .custom-input
+      .custom-input__icon
+        +svg("message")
+      textarea(name="info" placeholder="Дополнительная информация")
+    .custom-input
+      .custom-input__icon
+        +svg("file")
+      label Прикрепите файлы
+      input(type="file" name="file")
+    .small-info Максимальный размер файла #[span 10 мб]. Разрешенные типы файлов #[span jpg, gif, jpeg, png]
+  .steps-form__tabs-btns
+    button#prevBtn.primary-btn(type='button' onclick='nextPrev(-1)') Назад
+    button#nextBtn.primary-btn.primary-btn_arrow(type='button' onclick='nextPrev(1)') Далее
+  .agreement(id="agreement") При нажатии кнопки "Отправить" Вы соглашаетесь с #[a политикой конфиденциальности и обработки персональных данных]

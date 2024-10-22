@@ -1,0 +1,16 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="6" clip-path="url(#clip0_328_902)">
+<path id="Rectangle 320" d="M1 21H79V79H17C8.16344 79 1 71.8366 1 63V21Z" stroke="#001F49" stroke-width="2"/>
+<path id="Rectangle 321" d="M80 15H61M1 21V21C1 17.6863 3.68629 15 7 15H19" stroke="#001F49" stroke-width="2"/>
+<path id="Rectangle 322" d="M55 52C55 47.5817 58.5817 44 63 44H79V60H63C58.5817 60 55 56.4183 55 52V52Z" stroke="#001F49" stroke-width="2"/>
+<circle id="Ellipse 15" cx="63" cy="52" r="3" stroke="#001F49" stroke-width="2"/>
+<path id="Ellipse 16" d="M57.8901 21C57.9627 20.3433 58 19.676 58 19C58 9.05887 49.9411 1 40 1C30.0589 1 22 9.05887 22 19C22 19.676 22.0373 20.3433 22.1099 21" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 22" d="M36 8L36 21" stroke="#001F49" stroke-width="2"/>
+<path id="Rectangle 323" d="M36 9H42C44.2091 9 46 10.7909 46 13V13C46 15.2091 44.2091 17 42 17H36V9Z" stroke="#001F49" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_328_902">
+<rect width="80" height="80" fill="white"/>
+</clipPath>
+</defs>
+</svg>

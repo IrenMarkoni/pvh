@@ -1,0 +1,78 @@
+section.hero 
+  .hero__slider 
+    .swiper-wrapper
+      .swiper-slide
+        .hero__slide(style="background-image: url(assets/img/pvh.jpg)") 
+          .container 
+            .hero__slide-content 
+              .hero__slide-info
+                h1 О компании 
+                p Компания ПРАКТИКА осуществляет полный спектр работ по производству полосовых и сплошных завес ПВХ, мягких окон, для обустройства дверных и оконных проемов беседок, веранд, террас, лоджий, шатров, летних кафе и любых других построек, а также других изделий из ПВХ
+                a.primary-btn.primary-btn_arrow(href="/about.html") Подробнее
+              .hero__slide-form
+                form.callback-form 
+                  h4 Вызвать замерщика 
+                  .callback-form__hide
+                    p.text-bold Заполните форму и мы перезвоним вам в течение 15 минут
+                    .callback-form__wrapper
+                      .custom-input
+                        .custom-input__icon
+                          +svg("name")
+                        input(type="text" name="name" placeholder="Имя")
+                      .custom-input
+                        .custom-input__icon
+                          +svg("phone")
+                        input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+                      button.primary-btn(type="submit") Заказать замер
+                      .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+      .swiper-slide
+        .hero__slide(style="background-image: url(assets/img/hero3.png)") 
+          .container 
+            .hero__slide-content 
+              .hero__slide-info
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore itaque hic dolore in eaque nostrum laborum quis unde esse nulla.
+                a.primary-btn.primary-btn_arrow Подробнее
+              .hero__slide-form
+                form.callback-form 
+                  h4 Вызвать замерщика 
+                  .callback-form__hide
+                    p.text-bold Заполните форму и мы перезвоним вам в течение 15 минут
+                    .callback-form__wrapper
+                      .custom-input
+                        .custom-input__icon
+                          +svg("name")
+                        input(type="text" name="name" placeholder="Имя")
+                      .custom-input
+                        .custom-input__icon
+                          +svg("phone")
+                        input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+                      button.primary-btn(type="submit") Заказать замер
+                      .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+      .swiper-slide
+        .hero__slide(style="background-image: url(assets/img/hero4.png)")
+          .container 
+            .hero__slide-content 
+              .hero__slide-info
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ducimus id eius enim tempora esse? Minus, harum sequi impedit sapiente nisi maxime aperiam consequuntur modi expedita ad, aliquam ut hic?
+                a.primary-btn.primary-btn_arrow Подробнее
+              .hero__slide-form
+                form.callback-form 
+                  h4 Вызвать замерщика 
+                  .callback-form__hide
+                    p.text-bold Заполните форму и мы перезвоним вам в течение 15 минут
+                    .callback-form__wrapper
+                      .custom-input
+                        .custom-input__icon
+                          +svg("name")
+                        input(type="text" name="name" placeholder="Имя")
+                      .custom-input
+                        .custom-input__icon
+                          +svg("phone")
+                        input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+                      button.primary-btn(type="submit") Заказать замер
+                      .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+    .container
+      .hero__slider-nav
+        .swiper-button-prev
+        .swiper-pagination      
+        .swiper-button-next

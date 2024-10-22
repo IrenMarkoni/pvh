@@ -1,0 +1,38 @@
+include ../mixins/style
+include ../mixins/js
+include ../mixins/img
+include ../mixins/svg
+include ../mixins/breadcrumbs
+include ../mixins/simpleCard
+include ../mixins/productCard
+
+block variables
+
+doctype html
+html
+  head
+    title #{title}
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='Neyiron')
+    link#favicon(rel='shortcut icon' type='image/png' href='assets/images/favicon2.png')
+    link(rel='stylesheet' href='assets/fonts/fonts.css')
+    +style('libs.min.css')
+    +style('global.css')
+    +style('common.css')
+    block styles
+  body
+    .body-wrapper
+      include ../partials/header2.pug
+      main.main
+        block content
+      include ../partials/footer.pug
+      include ../components/modals/all-modals
+      +js('libs.min.js')
+      +js('global/global.min.js')
+      +js('main/common.js')
+      +js('main/jquery.ui.touch-punch.min.js')
+      +js('main/sliders.js')
+      +js('main/forms.js')
+
+    block scripts

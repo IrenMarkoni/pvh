@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = '404';
+
+block content
+  include components/inner/404
+append styles
+  +style('index.css')

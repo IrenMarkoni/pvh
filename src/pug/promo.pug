@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Акции';
+
+block content
+  include components/inner/promo.pug
+append styles
+  +style('index.css')

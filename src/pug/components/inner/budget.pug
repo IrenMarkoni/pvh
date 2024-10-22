@@ -1,0 +1,39 @@
+- let breadcrumb = ["Главная", "Бюджетным организациям"];
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Бюджетным организациям
+section.section.info 
+  .container
+    .info__content
+      +img("budget.png")
+      .info__text
+        h3 Работаем по 44-ФЗ и 223-ФЗ
+        p Бюджетные организации, представители бюджетных или частных учреждений могут заключить контракт с «ПРАКТИКА» на изготовление мягких окон, тентовых конструкций, шатров, пологов, тентовых укрытий и защитных сеток любой сложности в соответствии с Федеральным законом № 44-ФЗ и № 223-ФЗ.
+
+section.section.services 
+  .container 
+    h2 Бесплатные услуги для заказчиков:
+    .services__content
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        p помощь с выбором продукции;
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        p помощь в составлении технических заданий;
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        p подготовка проектов договоров;
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        p расчет заказов и подготовка коммерческих предложений;
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        p составление локально-сметных расчётов;
+include ../callback

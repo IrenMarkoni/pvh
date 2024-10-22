@@ -1,0 +1,105 @@
+- let breadcrumb = ["Главная", "О нас"];
+
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 О нас
+section.section.info
+  .container 
+    .info__content 
+      +img("about.png")
+      .info__text
+        p Компания ПРАКТИКА осуществляет полный спектр работ по производству полосовых и сплошных завес ПВХ, мягких окон, для обустройства дверных и оконных проемов беседок, веранд, террас, лоджий, шатров, летних кафе и любых других построек, а также других изделий из ПВХ.
+        p Мы располагаем собственным производственным цехом в г. Туле с современным и надежным оборудованием фирмы LEISTER (Швейцария), Juki (Япония), Zemat (Польша). В отличии от наших конкурентов, мы используем не только технологии по вулканизации (пайке) пленки, но и сшивание полотен армированными лавсановыми нитями.
+
+section.section.benefits
+  .container 
+    h2 Мы ориентиру&shy;емся на интересы клиентов!
+    .benefits__content
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/equip.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Професси&shy;она&shy;льное оборудова&shy;ние
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/staff.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Квалифи&shy;циро&shy;ванный персонал
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/policy.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Честная политика формиро&shy;ва&shy;ния цен
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/quality.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Высокие стандарты качества
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/base.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Соб&shy;ственная материаль&shy;ная база
+      .simple-card
+        .simple-card__icon
+          img(src="assets/img/svg/terms.svg" alt="icon")
+        .simple-card__info
+          h5.simple-card__title Заказы качес&shy;твенно и в срок
+
+section.section.format 
+  .container 
+    h2 Формат работы
+    .format__content
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        .checked-card__info 
+          h5 Подробная консультация
+          p Менеджеры нашей компании отлично ориентируются в оказываемых услугах и на связи с 9.00 до 20.00 каждый день по телефону, чтобы ответить на ваши вопросы.
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        .checked-card__info 
+          h5 Не обязательно ехать в офис
+          p Наш замерщик сам привозит все образцы на объект, замерит, проконсультирует по материалам и фурнитуре, а договор вы можете заключить на месте.
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        .checked-card__info 
+          h5 Сервис
+          p Ваш заказ до момента его запуска в производство будет вести персональный менеджер, готовый ответить на ваши вопросы.
+      .checked-card
+        .checked-card__icon 
+          +svg("checked")
+        .checked-card__info 
+          h5 Точно в срок!
+          p Как только заказ будет готов (не более 20 рабочих дней после оплаты), мы доставим ваш заказ по адресу монтажа. Вы можете быть уверены, что материалы не пострадают при перевозке, а изделие будет установлено качественно и быстро.
+
+section.section.production
+  .container 
+    h2 Фотографии с производства
+    .production__slider
+      .swiper-wrapper
+        .swiper-slide
+          +img("production/1.png")
+        .swiper-slide
+          +img("production/2.png")
+        .swiper-slide
+          +img("production/3.png")
+        .swiper-slide
+          +img("production/4.png")
+        .swiper-slide
+          +img("production/2.png")
+        .swiper-slide
+          +img("production/3.png")
+        .swiper-slide
+          +img("production/1.png")
+        .swiper-slide
+          +img("production/4.png")
+      .production__slider-nav
+        .swiper-button-prev
+        .swiper-pagination      
+        .swiper-button-next
+include ../callback

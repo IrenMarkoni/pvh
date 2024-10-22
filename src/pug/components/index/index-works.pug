@@ -1,0 +1,9 @@
+- let works = [{img: "assets/img/works/work1.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work2.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work3.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work4.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work5.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work6.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}]
+section.section.i-works 
+  .container
+    h2 Наши работы
+    .i-works__content 
+      each work in works
+        a.product-card(href="")
+          +productCard({img: work.img, title: work.title, area: work.area, days: work.days, time: work.time})
+    a.primary-btn Ещё проекты

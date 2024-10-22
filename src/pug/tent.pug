@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Мобильные шатры 3х3 м';
+
+block content
+  include components/inner/tent.pug
+append styles
+  +style('index.css')

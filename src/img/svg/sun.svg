@@ -1,0 +1,18 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="3" clip-path="url(#clip0_328_7229)">
+<path id="Ellipse 6" d="M23.294 29C21.2119 32.1558 20 35.9364 20 40C20 51.0457 28.9543 60 40 60C51.0457 60 60 51.0457 60 40C60 28.9543 51.0457 20 40 20C36.0341 20 32.3378 21.1543 29.2288 23.1453" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 10" d="M40 0V16" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 12" d="M80 40L64 40" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 14" d="M68.2842 11.7157L56.9705 23.0294" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 16" d="M68.2842 68.2843L56.9705 56.9706" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 11" d="M40 64V80" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 13" d="M16 40L0 40" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 15" d="M23.0293 56.9706L11.7156 68.2843" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 17" d="M42.5005 41.5001L11.7161 11.7157M42.5005 41.5001L42.5005 34.0001M42.5005 41.5001L35.0002 41.5001" stroke="#001F49" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_328_7229">
+<rect width="80" height="80" fill="white"/>
+</clipPath>
+</defs>
+</svg>

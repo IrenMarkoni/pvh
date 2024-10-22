@@ -1,0 +1,65 @@
+- let breadcrumb = ["Главная", "Портфолио", "Веранды / Террасы / Балконы", "Веранда в СНТ Садовод"];
+- let works = [{img: "assets/img/works/work4.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work5.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work6.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}]
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Веранда в СНТ Садовод
+section.section.product 
+  .container 
+    .product__content 
+      .product__slider 
+        .swiper-wrapper 
+          .swiper-slide 
+            +img("works/work7.png")
+          .swiper-slide 
+            +img("works/work6.png")
+          .swiper-slide 
+            +img("works/work5.png")
+        .product__slider-bottom
+          .swiper-button-prev
+          .swiper-pagination
+          .swiper-button-next
+
+      .product__info
+        .product__info-table
+          .product__info-row 
+            .product__info-col 
+              span Общая площадь изделия
+            .product__info-col 
+              span 13,7 #[sup 2]
+          .product__info-row 
+            .product__info-col 
+              span Пленка ПВХ
+            .product__info-col 
+              span 9,5 #[sup 2]
+          .product__info-row 
+            .product__info-col 
+              span Пленка ТПУ
+            .product__info-col 
+              span 4,2 #[sup 2]
+          .product__info-row 
+            .product__info-col 
+              span Фурнитура
+            .product__info-col 
+              span Поворотная полиамидная скоба, темно-коричневая
+          .product__info-row 
+            .product__info-col 
+              span Окантовка
+            .product__info-col 
+              span Люкс коричневый
+
+        .product__info-bottom
+          a.primary-btn Заявка на установку мягких окон
+section.section.others
+  .container 
+    h2 Другие проекты
+    .others__slider
+      .swiper-wrapper 
+        each work in works
+          .swiper-slide
+            a.product-card(href="")
+              +productCard({img: work.img, title: work.title, area: work.area, days: work.days, time: work.time})
+
+
+
+include ../callback

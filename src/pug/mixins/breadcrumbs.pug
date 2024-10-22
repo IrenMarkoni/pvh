@@ -1,0 +1,10 @@
+mixin breadcrumbs(items)
+  .breadcrumbs
+    .breadcrumbs-wrap
+      each item, i in items
+        if items.length - 1 !== i
+          a.breadcrumbs-item(href="/")
+            span=item
+        else
+          div.breadcrumbs-item
+            span=item

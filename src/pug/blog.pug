@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Блог';
+
+block content
+  include components/inner/blog.pug
+append styles
+  +style('index.css')

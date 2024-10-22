@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Портфолио';
+
+block content
+  include components/inner/portfolio.pug
+append styles
+  +style('index.css')

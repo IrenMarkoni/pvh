@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Веранда в СНТ Садовод';
+
+block content
+  include components/inner/project.pug
+append styles
+  +style('index.css')

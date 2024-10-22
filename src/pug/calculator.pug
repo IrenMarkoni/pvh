@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Калькулятор';
+
+block content
+  include components/inner/calculator-shater.pug
+append styles
+  +style('index.css')

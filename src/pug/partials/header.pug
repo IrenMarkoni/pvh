@@ -1,0 +1,286 @@
+header.header(id="header")
+  .container
+    .header__top
+      a.logo(href="/")
+        +img("logo.svg")
+        .logo__txt 
+          +img("praktika.png")
+          p Мягкие окна в Туле
+      .header__address 
+        p.text-label Адрес офиса:
+        p.text-bold г. Тула, Демидовская улица, 61г
+      .header__socials
+        .socials 
+          a.socials__item.socials__item_wa(href="") 
+          a.socials__item.socials__item_tg(href="")  
+          a.socials__item.socials__item_vk(href="") 
+      a.secondary-btn.openmodal(data-modal="callback") Заказать звонок
+      .header__contacts
+        p.text-label c 9:00 до 20:00 ежедневно
+        a.text-bold(href="tel:+79038404744") +7 (903) 840 47 44
+      .header__search
+        .search__open
+          +svg("search")
+        form.search__form
+          input.search__input(type="text" name="search" placeholder="Введите запрос для поиска")
+          button.search__btn(type="submit")
+            +svg("search")
+          .search__close
+            +svg("close")
+      .burger 
+        +svg("burger")
+
+    .header__bottom
+      nav.nav 
+        ul.main-menu
+          li.main-menu__item 
+            a(href="/about.html") О нас
+
+          li.main-menu__item.main-menu__item_drop
+            a(href="/categories.html") Продукция
+            .submenu 
+              .submenu__wrapper
+                .submenu__lvl2
+                  ul 
+                    li(data-menu="1") 
+                      a(href="") Мягкие окна
+                    li 
+                      a(href="") Москитные сетки
+                    li(data-menu="2")
+                      a(href="") Мобильные шатры
+                    li(data-menu="3")
+                      a(href="") Полосовые завесы ПВХ
+                    li
+                      a(href="") Шторы для автомоек
+                    li(data-menu="4")
+                      a(href="") Скатерти и покрытия на стол
+                .submenu__lvl3 
+                  ul(data-menu="1")
+                    li 
+                      a(href="") Мягкие окна для беседок
+                    li 
+                      a(href="") Мягкие окна для веранд
+                    li 
+                      a(href="") Мягкие окна для террас
+                    li 
+                      a(href="") Мягкие окна для кафе и ресторанов
+                  ul(data-menu="2")
+                    li 
+                      a(href="") Мобильные шатры 3*3
+                    li 
+                      a(href="") Мобильные шатры 3*4.5
+                    li 
+                      a(href="") Мобильные шатры 3*6
+                    li 
+                      a(href="") Мобильные шатры 4*4
+                    li 
+                      a(href="") Мобильные шатры 4*6
+                    li 
+                      a(href="") Мобильные шатры 4*8
+                  ul(data-menu="3")
+                    li 
+                      a(href="") Морозостойкие пвх завесы 
+                  ul(data-menu="4")
+                    li 
+                      a(href="") Гибкое стекло на стол
+                    li 
+                      a(href="") Мягкое стекло на столешницу
+          li.main-menu__item.main-menu__item_drop
+            a(href="/materials.html") Материалы
+            .submenu 
+              .submenu__wrapper
+                .submenu__lvl2
+                  ul 
+                    li 
+                      a(href="") Пленки ПВХ (мягкое стекло)
+                    li 
+                      a(href="") Фурнитура (крепления)
+                    li 
+                      a(href="") Окантовка для мягких окон
+                    li 
+                      a(href="") Москитные сетки
+                    li 
+                      a(href="") Молнии, ремни, застежки, нитки
+                    li 
+                      a(href="") Материалы для ПВХ завес
+          li.main-menu__item.main-menu__item_drop
+            a(href="/price.html") Цены
+            .submenu 
+              .submenu__wrapper
+                .submenu__lvl2
+                  ul 
+                    li 
+                      a(href="") Цены на мягкие окна
+                    li 
+                      a(href="") Цены на скатерти ПВХ
+                    li 
+                      a(href="") Цены на мобильные шатры
+                    li 
+                      a(href="") Цены на ПВХ завесы
+                    li 
+                      a(href="") Цены на шторы для автомоек
+          li.main-menu__item
+            a(href="/calculator.html") Калькулятор
+          li.main-menu__item.main-menu__item_drop
+            a(href="") Полезное
+            .submenu 
+              .submenu__wrapper
+                .submenu__lvl2
+                  ul 
+                    li 
+                      a(href="/dealers.html") Дилерам
+                    li 
+                      a(href="/payment.html") Оплата
+                    li 
+                      a(href="/budget.html") Бюджетным организациям
+                    li 
+                      a(href="/warranty.html") Гарантия
+                    li 
+                      a(href="/questions.html") Вопрос - ответ
+                    li
+                      a(href="/blog.html") Блог
+          li.main-menu__item
+            a(href="/portfolio.html") Портфолио
+          li.main-menu__item.main-menu__item_drop
+            a(href="") Акции и новости
+            .submenu 
+              .submenu__wrapper
+                .submenu__lvl2
+                  ul 
+                    li 
+                      a(href="/promo.html") Акции
+                    li 
+                      a(href="") Новости
+          li.main-menu__item
+            a(href="/contacts.html") Контакты
+
+
+    .mobile-menu 
+      .mobile-menu__wrapper
+        .mobile-menu__header
+          a.mobile-menu__logo(href="/")
+            +img("logo.png")
+          .mobile-menu__btns 
+            .mobile-search
+              .mobile-search__open
+                +svg("search")
+              form.mobile-search__form
+                .mobile-search__form-wrapper
+                  input.mobile-search__input(type="text" name="search" placeholder="Введите запрос для поиска")
+                  button.mobile-search__btn(type="submit")
+                    +svg("search")
+            .mobile-menu__close
+              +svg("close")
+        .mobile-menu__body
+          ul.mobile-menu__list
+            li
+              a(href="") О нас
+            li.mobile-menu__dropdown
+              a Продукция  
+              ul.mobile-submenu 
+                li.mobile-menu__dropdown
+                  a Мягкие окна
+                  ul.mobile-submenu2 
+                    li 
+                      a(href="") Мягкие окна для беседок
+                    li 
+                      a(href="") Мягкие окна для веранд
+                    li 
+                      a(href="") Мягкие окна для террас\
+                    li 
+                      a(href="") Мягкие окна для кафе и ресторанов
+                li
+                  a(href="") Москитные сетки
+                li.mobile-menu__dropdown
+                  a Мобильные шатры
+                  ul.mobile-submenu2  
+                    li 
+                      a(href="") Мобильные шатры 3*3
+                    li 
+                      a(href="") Мобильные шатры 3*4.5
+                    li 
+                      a(href="") Мобильные шатры 3*6
+                    li 
+                      a(href="") Мобильные шатры 4*4
+                    li 
+                      a(href="") Мобильные шатры 4*6
+                    li 
+                      a(href="") Мобильные шатры 4*8
+
+                li.mobile-menu__dropdown
+                  a Полосовые завесы ПВХ
+                  ul.mobile-submenu2  
+                    li 
+                      a(href="") Морозостойкие пвх завесы 
+                li
+                  a(href="") Шторы для автомоек
+                li.mobile-menu__dropdown
+                  a Скатерти и покрытия на стол
+                  ul.mobile-submenu2  
+                    li 
+                      a(href="") Гибкое стекло на стол
+                    li 
+                      a(href="") Мягкое стекло на столешницу
+
+
+            li.mobile-menu__dropdown
+              a Материалы
+              ul.mobile-submenu 
+                li
+                  a(href="") Пленки ПВХ (мягкое стекло)
+                li
+                  a(href="") Фурнитура (крепления)
+                li
+                  a(href="") Окантовка для мягких окон
+                li
+                  a(href="") Москитные сетки
+                li
+                  a(href="") Молнии, ремни, застежки, нитки
+                li
+                  a(href="") Материалы для ПВХ завес
+            li.mobile-menu__dropdown
+              a Цены
+              ul.mobile-submenu 
+                li 
+                  a(href="") Цены на мягкие окна
+                li 
+                  a(href="") Цены на скатерти ПВХ
+                li 
+                  a(href="") Цены на мобильные шатры
+                li 
+                  a(href="") Цены на ПВХ завесы
+                li 
+                  a(href="") Цены на шторы для автомоек
+            li
+              a(href="") Калькулятор
+            li.mobile-menu__dropdown
+              a Полезное
+              ul.mobile-submenu 
+                li
+                  a(href="") Дилерам
+                li
+                  a(href="") Оплата
+                li
+                  a(href="") Бюджетным организациям
+                li
+                  a(href="") Гарантия
+                li
+                  a(href="") Вопрос - ответ
+                li
+                  a(href="") Блог
+            li
+              a(href="") Портфолио
+            li.mobile-menu__dropdown
+              a Акции и новости
+              ul.mobile-submenu 
+                li
+                  a(href="") Акции
+                li
+                  a(href="") Новости
+            li
+              a(href="") Контакты
+          .mobile-menu__bottom  
+            .header__contacts
+              p.text-label c 9:00 до 20:00 ежедневно
+              a.text-bold(href="tel:+79038404744") +7 (903) 840 47 44
+            a.primary-btn.openmodal(data-modal="callback") Заказать звонок

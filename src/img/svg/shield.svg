@@ -1,0 +1,12 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="2" clip-path="url(#clip0_328_8995)">
+<path id="Ellipse 5" d="M53 26.8617C49.7078 23.8426 45.3191 22 40.5 22C30.2827 22 22 30.2827 22 40.5C22 50.7173 30.2827 59 40.5 59C50.7173 59 59 50.7173 59 40.5C59 38.2126 58.5849 36.0222 57.8259 34" stroke="#001F49" stroke-width="2"/>
+<path id="Vector 9" d="M32.5 39L39.5 46L59.5 26" stroke="#001F49" stroke-width="2"/>
+<path id="Union" d="M8 13.55C14.6016 15.3146 32.8828 14.9937 40.5 2C48.1172 14.9937 66.3984 15.3146 73 13.55V40.9812C73 63.1187 50.9948 74.8292 40.5 79C30.0052 74.8292 8 63.1187 8 40.9812V13.55Z" stroke="#001F49" stroke-width="2"/>
+</g>
+<defs>
+<clipPath id="clip0_328_8995">
+<rect width="80" height="80" fill="white"/>
+</clipPath>
+</defs>
+</svg>

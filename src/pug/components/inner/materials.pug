@@ -1,0 +1,90 @@
+- let breadcrumb = ["Главная", "Материалы"];
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Материалы
+section.section.categories 
+  .container 
+    .categories__content.categories__content_3
+      a.categories-card(href="")
+        h5.categories-card__title Пленки ПВХ (мягкое стекло)&nbsp;→
+        +img("categories/cat7.png")
+      a.categories-card(href="")
+        h5.categories-card__title Фурнитура (крепления)&nbsp;→
+        +img("categories/cat8.png")
+      a.categories-card(href="")
+        h5.categories-card__title Окантовка для мягких окон&nbsp;→
+        +img("categories/cat9.png")
+      a.categories-card(href="")
+        h5.categories-card__title Москитные сетки&nbsp;→
+        +img("categories/cat10.png")
+      a.categories-card(href="")
+        h5.categories-card__title Молнии, ремни, застежки, нитки&nbsp;→
+        +img("categories/cat11.png")
+      a.categories-card(href="")
+        h5.categories-card__title Материалы для ПВХ завес&nbsp;→
+        +img("categories/cat4.png")
+section.section.bordered-info 
+  .container 
+    .bordered-info__content
+      +img("materials.png") 
+      .bordered-info__text 
+        .bordered-info__icon
+          +svg("award")
+        p Производство мягких окон ведется на современным оборудованием фирмы LEISTER (Швейцария), Juki (Япония), Zemat (Польша) из высококачественных материалов, с точным соблюдением технологии их обработки. Прозрачность материала аналогична светопропусканию обычного оконного стекла.
+
+section.section 
+  .container 
+    .accordeon 
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Виды материалов для мягких окон
+        .accordeon__body
+          ul 
+            li #[strong Пленка ПВХ (мягкое стекло)] — основной элемент в конструкции мягких окон.
+            li #[strong Фурнитура (крепления) ] — вариации крепления окон к материалу постройки. Различаются по надежности посадки окна к месту монтажа и удобству.
+            li #[strong Окантовка] — материал обрамления периметра окон ПВХ. Именно в окантовку встраивается фурнитура для крепления к каркасу постройки.
+            li #[strong Москитные сетки] — дополнительный атрибут (приобретается отдельно либо в комплекте с окном).
+            li #[strong Молнии, ремни, застежки, ролики] — применяются для еще большего комфорта при использовании мягких окон.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Материал для мягких окон
+        .accordeon__body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque eos tenetur, est nam autem facere eveniet fuga. Excepturi, dolores nobis.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Мы предлагаем следующие элементы изделий
+        .accordeon__body
+          ul 
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Окантовка
+        .accordeon__body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis corrupti quia placeat distinctio tempora asperiores commodi, provident, libero aliquid et inventore perspiciatis facilis repudiandae incidunt aut adipisci excepturi dolorum?
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Что будет с мягкими окнами зимой?
+        .accordeon__body
+          p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, doloremque.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Где производится используемая нами пвх-пленка?
+        .accordeon__body
+          ul 
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+            li Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, et.
+include ../callback

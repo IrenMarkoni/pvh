@@ -1,0 +1,7 @@
+mixin simpleCard(data)
+  .simple-card
+    .simple-card__icon
+      img(src=`${data.img}`, alt="icon")
+    .simple-card__info
+      h5.simple-card__title=data.title
+      p.simple-card__txt(href="")=data.txt

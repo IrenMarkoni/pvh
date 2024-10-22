@@ -1,0 +1,61 @@
+- let breadcrumb = ["Главная", "Дилерам"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Дилерам
+section.section.info 
+  .container 
+    .info__content
+      +img("dealers.png")
+      .info__text
+        p Компания #[a(href="") ПРАКТИКА] (practikpvh.ru) располагает собственными производственными мощностями в г. Тула и большим опытом изготовления и установки мягких окон ПВХ.
+        p Благодаря высокой квалификации сотрудников, слаженной командной работе на всех производственных этапах и системе контроля качества, мы смогли оптимизировать процесс изготовления продукции под большие объемы заказов без экономии на материалах и фурнитуре. Поэтому мы предлагаем нашим партнерам лучшую цену, короткие сроки производства и качество готовых изделий.
+        p Если Вы хотите стать нашим дилером, мы всегда открыты для партнерских отношений на взаимовыгодных условиях.
+section.section.callback
+  .container 
+    .callback__content 
+      .callback__info 
+        h2 Оставьте заявку на сотрудничество через форму
+        p.subtext или напишите нам в мессенджеры
+        .socials 
+          a.socials__item.socials__item_wa(href="") 
+          a.socials__item.socials__item_tg(href="")  
+          a.socials__item.socials__item_vk(href="") 
+
+      include ../step-form
+section.section.dealers-questions 
+  .container 
+    .accordeon 
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Кому подойдёт наше предложение?
+        .accordeon__body
+          ul
+            li Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, suscipit.
+            li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odio corrupti perferendis impedit recusandae sed.
+            li Lorem ipsum dolor sit amet. 
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Наши приоритеты
+        .accordeon__body
+          ul
+            li Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, suscipit.
+            li Lorem ipsum dolor sit amet.
+            li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odio corrupti perferendis impedit recusandae sed.
+            li Lorem ipsum dolor sit amet.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Что мы предлагаем партнерам
+        .accordeon__body
+          ul
+            li Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, suscipit.
+            li Lorem ipsum dolor sit amet.
+            li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odio corrupti perferendis impedit recusandae sed.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, suscipit.
+            li Lorem ipsum dolor sit amet.
+            li Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam odio corrupti perferendis impedit recusandae sed.
+            li Lorem ipsum dolor sit amet.

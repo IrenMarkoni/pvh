@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Прозрачная плёнка ПВХ 700 мкм';
+
+block content
+  include components/inner/material-card.pug
+append styles
+  +style('index.css')

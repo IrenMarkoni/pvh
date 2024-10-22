@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Мягкое стекло на столешницу: современное решение для вашего дома';
+
+block content
+  include components/inner/post.pug
+append styles
+  +style('index.css')

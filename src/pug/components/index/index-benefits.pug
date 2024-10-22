@@ -1,0 +1,11 @@
+- let items = [{img: "assets/img/svg/umbrella.svg", title: "Защищают от:", txt: "пыли, ветра, дождя, снега и насекомых."}, {img: "assets/img/svg/shield.svg", title: "Нельзя разбить!", txt: "Мягкие окна абсолютно безопасны для детей, взрослых и животных."}, {img: "assets/img/svg/sun.svg", title: "Высокая светопропускаемость", txt: "не менее 90% светопропускаемости, изделие практически не затеняет помещение."}, {img: "assets/img/svg/calendar.svg", title: "Срок службы более 10 лет", txt: "Мягкие окна не подтверждены атмосферным воздействиям."}, {img: "assets/img/svg/weather.svg", title: "Не деформируются", txt: "сохраняя внешний вид и в жару (до +50°С), и в мороз (до -40°С)."}, {img: "assets/img/svg/wallet.svg", title: "В 2 раза дешевле остекления", txt: "вы существенно экономите!"}]
+section.section.benefits 
+  .container 
+    h2 Преимущества
+    .benefits__content
+      each item in items 
+        .benefits__item
+          +simpleCard({img: item.img, title: item.title, txt: item.txt})
+
+
+

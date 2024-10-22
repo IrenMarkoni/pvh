@@ -1,0 +1,22 @@
+- let breadcrumb = ["Главная", "Результаты поиска"];
+
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Результаты поиска по запросу "#[span сюда выводится запрос]"
+section.section
+  .container 
+    .page-grid
+      .article-card 
+        +img("blog/1.png")
+        a.article-card__title(href="") Название
+        p Описание
+      .article-card 
+        +img("blog/1.png")
+        a.article-card__title(href="") Название
+        p Описание
+      .article-card 
+        +img("blog/1.png")
+        a.article-card__title(href="") Название
+        p Описание

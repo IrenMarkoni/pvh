@@ -1,0 +1,32 @@
+- let breadcrumb = ["Главная", "Оплата"];
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Оплата
+section.section.payment 
+  .container 
+    .payment__content
+      .payment__steps 
+        h5 Уважаемые клиенты с помощью системы быстрых платежей (СБП) вы можете легко и удобно оплатить свой заказ, с помощью QR кода.
+        .payment__steps-wrap 
+          .steps__item 
+            span
+            .steps__item-top 
+              .steps__icon
+                +svg("measure-tape") 
+              .steps__number 1
+            p После замера наш мастер определяет сумму к оплате, далее переходите в раздел «оплата» на нашем сайте, сканируете QR код и программа автоматически переводит вас в приложение банка.
+          .steps__item 
+            .steps__item-top 
+              .steps__icon
+                +svg("doc") 
+              .steps__number 2
+            p Далее следуете инструкции в приложении. В основание необходимо вписать № Договора.
+      .payment__code
+        p Отсканируй QR код и оплати в приложении банка
+        +img("code.png")
+include ../callback
+
+
+

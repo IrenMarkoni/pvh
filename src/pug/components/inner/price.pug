@@ -1,0 +1,99 @@
+- let breadcrumb = ["Главная", "Цены"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Цены на продукцию от компании Практика
+    .tags.tags_product
+      .tags__overflow 
+        .tags__item.active(data-tabs="0") Мягкие окна
+        .tags__item(data-tabs="1") Москитные сетки
+        .tags__item(data-tabs="2") Шторы для автомоек
+        .tags__item(data-tabs="3") ПВХ завесы
+        .tags__item(data-tabs="4") Скатерти ПВХ
+        .tags__item(data-tabs="5") Мобильные шатры
+
+
+section.section.price 
+  .container 
+    .price__tabs 
+      .price__tabs-wrapper.active(data-tabs="0")
+        include ../price-tabs/tab-0
+      .price__tabs-wrapper(data-tabs="1")
+        include ../price-tabs/tab-1
+      .price__tabs-wrapper(data-tabs="2")
+        include ../price-tabs/tab-2
+      .price__tabs-wrapper(data-tabs="3")
+        include ../price-tabs/tab-3
+      .price__tabs-wrapper(data-tabs="4")
+        include ../price-tabs/tab-4
+      .price__tabs-wrapper(data-tabs="5")
+        include ../price-tabs/tab-5
+
+section.section.specialist 
+  .container 
+    .specialist__content
+      .specialist__block
+        h2 Вызов замерщика
+        .specialist__price 
+          h5 Стоимость замера
+          .specialist__price-table 
+            .specialist__price-row 
+              .specialist__price-col от Тулы
+              .specialist__price-col без договора
+              .specialist__price-col договор и монтаж
+            .specialist__price-row 
+              .specialist__price-col 1-20 км
+              .specialist__price-col #[span бесплатно]
+              .specialist__price-col бесплатно
+            .specialist__price-row 
+              .specialist__price-col 21-50 км
+              .specialist__price-col #[span 1 000 ₽]
+              .specialist__price-col бесплатно
+            .specialist__price-row 
+              .specialist__price-col 51-99 км
+              .specialist__price-col #[span 2 000 ₽]
+              .specialist__price-col #[span 1 000₽]
+            .specialist__price-row 
+              .specialist__price-col >100 км
+              .specialist__price-col #[span 20 ₽/км]
+          h5 Услуга «Замер» является информационной и предполагает:
+          ul 
+            li презентацию продукта;
+            li консультацию относительно используемых материалов и фурнитуры в будущем заказе;
+            li снятие размеров поверхности, на которую будут устанавливаться заказанные изделия;
+            li консультация относительно вариантов монтажа с учётом особенностей строения.
+      .specialist__block
+
+        form.callback-form 
+          h5 Заполните форму и мы перезвоним вам в течение 15 минут
+          .custom-input
+            .custom-input__icon
+              +svg("name")
+            input(type="text" name="name" placeholder="Имя")
+          .custom-input
+            .custom-input__icon
+              +svg("phone")
+            input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+          .custom-input
+            .custom-input__icon
+              +svg("message")
+            textarea(name="message" placeholder="Комментарий к заявке")
+          .callback-form__bottom
+            .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+            button.primary-btn(type="submit") Отправить
+        +img("man.png")
+    .accordeon 
+      .accordeon__item.active
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Юридическая информация
+        .accordeon__body(style="display: block")
+          ul 
+            li Все результаты выполнения услуги, являются собственностью ООО "Практика", как любая интеллектуальная собственность, которой компания может распоряжаться по своему усмотрению, в том числе Лист замера.
+            li Заказчик имеет право ознакомиться с результатами замера, но Лист замера остаётся у представителя компании ООО "Практика" и передаётся Заказчику исключительно после внесения предоплаты согласно условиям Договора подряда как приложение к Договору подряда.
+            li Заказчику предоставляется Акт приемки-сдачи оказанной услуги и визируется обеими сторонами.
+            li Изготовление рабочих чертежей изделия(ий) не входит в услугу «Замер».
+            li Размеры, указанные в Листе замера, являются техническими и подлежат дальнейшей обработке (корректировке) с учетом параметров и особенностей заказа производственным цехом Подрядчика.
+            li За использование третьими лицами полученных размеров для других целей компания ответственности не несет.
+include ../callback
+

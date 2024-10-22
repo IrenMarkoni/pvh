@@ -1,0 +1,67 @@
+- let breadcrumb = ["Главная", "Цены"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Цены на продукцию от компании Практика
+    .tags.tags_product
+      .tags__overflow 
+        .tags__item Мягкие окна
+        .tags__item Скатерти ПВХ
+        .tags__item.active Мобильные шатры
+        .tags__item ПВХ завесы
+        .tags__item Шторы для автомоек
+    .tags.tags_category
+      .tags__overflow 
+        .tags__item.active 3х3
+        .tags__item 3х4
+        .tags__item 3х6
+        .tags__item 4х4
+        .tags__item 4х6 (40мм)
+        .tags__item 4х6 (50мм)
+        .tags__item 4х8 (40мм)
+        .tags__item 4х8 (50мм)
+section.section.price 
+  .container
+    .price__top 
+      h3 Мобильный быстросборный шатёр — гармошка 3,0х3,0 м
+      .price__top-btns 
+        a.primary-btn Купить
+        a.primary-btn Арендовать
+    .price__note
+      p Базовый комплект
+    table.price-table.price-table_main
+      tr 
+        td Каркас 3,0х3,0 м из прямоугольного алюминиевого профиля 40 мм
+        td 37 600,00
+      tr 
+        td Крыша 3,0х3,0 м из пожаробезопасного полиэстера 600D
+        td 	15 300,00
+      tr 
+        td Сумка на колёсах для шатра 3,0х3,0 м из полиэстера 600D
+        td 4 000,00
+      tr 
+        td Комплект крепежа в грунт (стропы и колышки) в чехле
+        td 2 800,00
+      tr 
+        td Итого:
+        td 59 700,00
+
+    .price__note.price__note_drop
+      p Опциональные изделия
+    table.price-table.price-table_main.price-table_dropdown
+      tr 
+        td Каркас 3,0х3,0 м из прямоугольного алюминиевого профиля 40 мм
+        td 37 600,00
+      tr 
+        td Крыша 3,0х3,0 м из пожаробезопасного полиэстера 600D
+        td 	15 300,00
+      tr 
+        td Сумка на колёсах для шатра 3,0х3,0 м из полиэстера 600D
+        td 4 000,00
+      tr 
+        td Комплект крепежа в грунт (стропы и колышки) в чехле
+        td 2 800,00
+      tr 
+        td Итого:
+        td 59 700,00
+include ../callback

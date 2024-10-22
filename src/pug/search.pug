@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Результаты поиска';
+
+block content
+  include components/inner/search
+append styles
+  +style('index.css')

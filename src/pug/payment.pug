@@ -1,0 +1,9 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Оплата';
+
+block content
+  include components/inner/payment.pug
+append styles
+  +style('index.css')

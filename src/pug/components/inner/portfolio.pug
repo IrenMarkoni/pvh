@@ -1,0 +1,29 @@
+- let breadcrumb = ["Главная", "Портфолио"];
+- let works = [{img: "assets/img/works/work1.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work2.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work3.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work4.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work5.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work6.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work1.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work2.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work3.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work4.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work5.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work6.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work4.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work5.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}, {img: "assets/img/works/work6.png", title: "Заголовок проекта", area: "34", days: "за 10 дней", time: "6 часов"}]
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Портфолио
+    .tags
+      .tags__overflow 
+        .tags__item.active Веранды / Террасы / Балконы
+        .tags__item Беседки / Летние кухни
+        .tags__item Шторы и завесы
+        .tags__item Другие работы
+section.section.portfolio 
+  .container 
+    .page-grid
+      each work in works
+        a.product-card(href="")
+          +productCard({img: work.img, title: work.title, area: work.area, days: work.days, time: work.time})
+    .pagination 
+      .container 
+        .pagination__wrapper
+          .pagination__item.active 1
+          .pagination__item 2
+          .pagination__item 3
+          .pagination__item 4
+          .pagination__item 5
+          .pagination__item.dots ...
+          .pagination__item 7
+include ../callback

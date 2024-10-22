@@ -1,0 +1,105 @@
+- let breadcrumb = ["Главная", "Продукция", "Мягкие окна"];
+section.template-top 
+  .container 
+    .template-top__content
+      +breadcrumbs(breadcrumb) 
+      h1 Мягкие окна
+      p Главной особенностью и гордостью жителей загородных домов является наличие беседки или открытой террасы. Но очень часто именно это место становится главным камнем преткновения, возникающим по вине погодных условий или нашествия надоедливых насекомых. Как избавиться от дискомфорта на собственном участке в жару и холод, не прибегая к домоседству, подскажут профессионалы в сфере изготовления и установки мягких окон!
+      .template-top__btns
+        a.primary-btn Цены на мягкие окна
+    .template-top__img
+      +img("product1.png")
+section.expert
+  .container 
+    .expert__content
+      .expert__top
+        h3 Спросите эксперта
+        span Оставьте заявку на бесплатную консультацию специалиста:
+      form.callback-form 
+        .custom-input
+          .custom-input__icon
+            +svg("name")
+          input(type="text" name="name" placeholder="Имя")
+        .custom-input
+          .custom-input__icon
+            +svg("phone")
+          input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+        button.primary-btn(type="submit") Проконсультироваться
+        .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]
+section.section.types
+  .container
+    .categories__content.categories__content_img
+      a.categories-card(href="")
+        h5.categories-card__title Мягкие окна для беседок&nbsp;→
+        +img("windows/1.jpg")
+      a.categories-card(href="")
+        h5.categories-card__title Мягкие окна для веранд&nbsp;→
+        +img("windows/2.jpg")
+      a.categories-card(href="")
+        h5.categories-card__title Мягкие окна для террас&nbsp;→
+        +img("windows/3.jpg")
+      a.categories-card(href="")
+        h5.categories-card__title Мягкие окна для кафе и ресторанов&nbsp;→
+        +img("windows/4.jpg")
+
+section.section.questions 
+  .container 
+    .accordeon 
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Особенности
+        .accordeon__body
+          p Гибкие ПВХ окна представляют собой своеобразные натяжные шторы, основным материалом в которых вместо ткани выступает поливинилхлорид (известный в народе, как ПВХ-пленка), данное изделие имеет в своем арсенале ряд приятных особенностей, подчеркивающих их необходимость:
+          ul 
+            li Высокая прочность на растяжение и разрыв — ПХВ-пленка толщиной 500, 700, 1000 и 2000 мкм выдерживает даже сильные порывы ветра и ливень любой интенсивности.
+            li Не выгорают на солнце.
+            li Безопасность и ремонтопригодность. Мягкие окна невозможно разбить, а прорванные или прорезанные участки полотна всегда можно заменить, что немаловажно при наличии детей.
+            li Быстрый монтаж/демонтаж. Конструкция позволяет устанавливать или убирать их в считанные минуты.
+            li Эстетичный внешний вид и близость к окружающей среде. Мягкие гибкие окна не скрывают конструкцию, прозрачны (пропускают более 90% света). Широкая цветовая гамма окантовок позволяет гармонично вписать такое остекление в любой интерьер.
+          p Мы предлагаем пленки разной плотности: 500 - 2000 микрон. Следует понимать, что чем плотнее окно, тем прочнее и функциональнее оно будет. Но не стоит забывать и об обратной стороне медали – душной обстановке в помещении с плотными занавесями в летний жаркий период.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Плюсы и минусы
+        .accordeon__body
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Где используются?
+        .accordeon__body
+          p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores neque ratione corporis? Dolor laudantium quas alias soluta ratione eos repellendus.
+          ul 
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+            li Lorem ipsum dolor sit amet.
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Крепление и монтаж
+        .accordeon__body
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate dolore quibusdam neque eveniet aspernatur, repellat optio obcaecati, unde odit ipsam, ea officiis saepe sunt magni. Qui natus aspernatur similique quas?
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Что будет с мягкими окнами зимой?
+        .accordeon__body
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime ipsum quibusdam fugiat! Est ipsam, animi hic labore modi veritatis obcaecati quo in ullam nobis molestiae unde mollitia officiis eaque atque?
+      .accordeon__item
+        .accordeon__head
+          .accordeon__btn
+          h3.accordeon__title Где производится используемая нами пвх-пленка?
+        .accordeon__body
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, eos? Natus est quibusdam cum atque illo, blanditiis dolores ipsum nisi exercitationem quisquam iusto, a perferendis fugiat recusandae itaque, necessitatibus vitae.
+include ../index/index-steps
+include ../callback

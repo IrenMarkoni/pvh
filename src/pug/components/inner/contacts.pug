@@ -1,0 +1,102 @@
+- let breadcrumb = ["Главная", "Контакты"];
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Контакты
+section.section.contacts 
+  .container 
+    .contacts__table 
+      .contacts__item
+        .contacts__label Контактный телефон
+        a.contacts__phone(href="tel:+79038404744") +7 (903) 840 47 44
+      .contacts__item
+        .contacts__label Адрес электронной почты
+        a.contacts__mail(href="mailto:info@practikpvh.ru") info@practikpvh.ru
+      .contacts__item.contacts__item_row-3 
+        .contacts__item-column 
+          h3 Режим работы
+        .contacts__item-column 
+          .contacts__label Офис
+          .contacts__txt с 9.00 до 18.00#[br]пн. - пт.
+        //- .contacts__item-column 
+        //-   .contacts__label Производство
+        //-   .contacts__txt с 9.00 до 20.00#[br]пн. - сб.
+        .contacts__item-column 
+          .contacts__label Мы отвечаем на звонки
+          .contacts__txt с 9:00 до 20:00#[br]ежедневно
+      .contacts__item.contacts__item_row-3
+        .contacts__item-column 
+          h3 Наши адреса в Туле 
+          p Просим предварительно сообщить о приезде.
+        .contacts__item-column 
+          .contacts__label Офис
+          .contacts__txt Демидовская улица, 61Г
+          a.contacts__link(href="https://yandex.ru/maps/-/CDFiEMMg" target="_blank") Смотреть на карте
+        .contacts__item-column 
+          .contacts__label Производство
+          .contacts__txt ул. Набережная Дрейера, д. 52
+          a.contacts__link(href="https://yandex.ru/maps/-/CDFiEYn~" target="_blank") Смотреть на карте
+      .contacts__item 
+        .contacts__label Реквизиты
+        p ООО «ПРАКТИКА»
+        p ИНН: 7100008380
+        p КПП: 710001001
+        p ОГРН: 1217100008245
+        p Генеральный директор:
+        p Толмачев Александр Александрович 
+      .contacts__item 
+        .contacts__label Дополнительно
+        a.contacts__docs(href="" target="_blank") Карточка учёта основных сведений
+    .contacts__map
+      script(type="text/javascript" charset="utf-8" async
+    src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Adee28a34c7609962089f037768f9573603ff7fe1bef81e359abc559f53aaa3f3&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true")
+    .contacts__route 
+      h3 Как добраться
+      .tags.tags_route 
+        .tags__overflow
+          .tags__item.active.tab(data-street="1") Заезд с улицы Октябрьская
+          .tags__item.tab(data-street="2") Заезд с улицы Демидовская
+      .contacts__route-body
+        .contacts__route-item.tab-content.active(data-street="1")
+          .contacts__route-cards
+            .contacts__route-card 
+              .contacts__route-line
+              span 1
+              +img("route/1-1.png")
+              p Двигаясь по ул. Октябрьская поверните на светофоре в сторону ресторана Макдоналдс.
+            .contacts__route-card 
+              .contacts__route-line
+              span 2
+              +img("route/1-2.png")
+              p Двигайтесь по ул. Арсенальная в сторону завода "Арсенал" мимо 1-го шлагбаума.
+            .contacts__route-card 
+              .contacts__route-line
+              span 3
+              +img("route/1-3.png")
+              p На 2-ом шлагбауме поверните во двор. Ориентир палатка с ремонтом обуви. Позвоните по телефону 38-47-44 и Вам его откроют, либо пройдите пешком.
+            .contacts__route-card 
+              span 4
+              +img("route/1-4.png")
+              p Вы на месте. Позвоните в домофон. Вас встретят и проводят к нам в офис.
+
+        .contacts__route-item.tab-content(data-street="2")
+          .contacts__route-cards
+            .contacts__route-card 
+              span 1
+              +img("route/2-1.jpg")
+              p Двигаясь по ул. Демидовская поверните на ул. Арсенальная в сторону ресторана Макдоналдс.
+            .contacts__route-card 
+              span 2
+              +img("route/2-2.jpg")
+              p Двигайтесь прямо по ул. Арсенальная до палатки с ремонтом обуви.
+            .contacts__route-card 
+              span 3
+              +img("route/1-3.png")
+              p Поверните направо к шлагбауму во двор. Позвоните по телефону 38-47-44 и Вам его откроют, либо пройдите пешком.
+            .contacts__route-card 
+              span 4
+              +img("route/1-4.png")
+              p Вы на месте. Позвоните в домофон. Вас встретят и проводят к нам в офис.
+
+include ../callback

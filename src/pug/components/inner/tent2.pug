@@ -1,0 +1,231 @@
+- let breadcrumb = ["Главная", "Продукция", "Мобильные шатры", "Мобильные шатры 3х3 м"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Мобильные шатры 3х3 м
+    .tags
+      .tags__overflow 
+        .tags__item.active 3х3
+        .tags__item 3х4
+        .tags__item 3х6
+        .tags__item 4х4
+        .tags__item 4х6 (40мм)
+        .tags__item 4х6 (50мм) 
+        .tags__item 4х8 (40мм)
+        .tags__item 4х8 (50мм)
+section.section.product 
+  .container 
+    .product__content 
+      .product__slider 
+        +img("tent2.png")
+
+
+      .product__info
+        .product__info-table
+          .product__info-row 
+            .product__info-col 
+              span Площадь
+            .product__info-col 
+              span 9 м2
+          .product__info-row 
+            .product__info-col 
+              span Вместимость
+            .product__info-col 
+              span до 7 человек
+          .product__info-row 
+            .product__info-col 
+              span Вес
+            .product__info-col 
+              span 35 кг
+          .product__info-row 
+            .product__info-col 
+              span Высота входа
+            .product__info-col 
+              span 2.1 м
+          .product__info-row 
+            .product__info-col 
+              span Время монтажа
+            .product__info-col 
+              span 2 минуты
+          .product__info-row 
+            .product__info-col 
+              span Ветровая нагрузка
+            .product__info-col 
+              span до 18 м/c
+          .product__info-row 
+            .product__info-col 
+              span Цвет
+            .product__info-col 
+              span Белый
+          .product__info-row 
+            .product__info-col 
+              span Гарантия
+            .product__info-col 
+              span 1 год
+          .product__info-row 
+            .product__info-col 
+              span Срок службы тента
+            .product__info-col 
+              span до 5 лет
+          .product__info-row 
+            .product__info-col 
+              span Каркас
+            .product__info-col 
+              span Анодированный алюминиевый#[br] профиль. Сечение 40x40
+          .product__info-row 
+            .product__info-col 
+              span Крыша и стены
+            .product__info-col 
+              span Влагостойкий полиэстер не поддерживает горение, имеет пропитку против #[br] плесени. Толщина 600D
+        .product__info-bottom
+          .product__info-block 
+            label Покупка:
+            .product__info-price от #[span 59 700] ₽
+          a.primary-btn Рассчитать цену
+    .product__description
+      .product__description-blocks  
+        div 
+          h3 Описание
+          p Термопластичный полиуретан — материал исключительно прочный, износостойкий, обладающий высокой резистентностью к температурному и химическому воздействию — и одновременно эластичный, легкий, приятный на ощупь. Этот материал используется для уменьшения массы готовой конструкции. Изделия не теряют гибкость даже при экстремальных морозах — 60°C, не плавятся при нагревании до + 80°C.
+        div 
+          h3 В комплекте
+          ul 
+            li каркас из алюминиевого профиля 40 мм;
+            li крыша из пожаробезопасного полиэстера 600D;
+            li сумка на колесах из полиэстера 600D;
+            li комплект крепежа в грунт в чехле;
+
+//- section.calc 
+//-   .container 
+//-     h2 Расчёт цены
+
+//-     form.calc__form 
+//-       .calc__options
+//-         .calc__variants.calc__variants-main(data-block="main")
+//-           h5 Выберите опции 
+//-           .calc__options-wrapper
+//-             label.calc__options-item(for="op1") 
+//-               input(type="checkbox" id="op1" name="Глухая стена 3х3")
+//-               span
+//-               +img("options/1.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Глухая стена 3х3
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op2") 
+//-               input(type="checkbox" id="op2" name="Стена с арочным окном 3м")
+//-               span
+//-               +img("options/2.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с арочным окном 3м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op3") 
+//-               input(type="checkbox" id="op3" name="Стена с дверью- скруткой 3м")
+//-               span
+//-               +img("options/3.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с дверью- скруткой 3м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op4") 
+//-               input(type="checkbox" id="op4" name="Стена с распашной дверью на молнии")
+//-               span
+//-               +img("options/4.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с распашной дверью на молнии
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op5") 
+//-               input(type="checkbox" id="op5" name="Стена с широким окном 3 м")
+//-               span
+//-               +img("options/5.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с широким окном 3 м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op6") 
+//-               input(type="checkbox" id="op6" name="Стена — москитная сетка 3 м")
+//-               span
+//-               +img("options/6.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена — москитная сетка 3 м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="op7") 
+//-               input(type="checkbox" id="op7" name="Стена с окном с москитной сеткой 3 м")
+//-               span
+//-               +img("options/7.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с окном с москитной сеткой 3 м
+//-                 .calc__options-price #[span 5 500] ₽
+
+
+//-         .calc__variants.calc__variants-comfort(data-block="comfort")
+//-           h5 Дополнительный комфорт
+//-           .calc__options-wrapper
+//-             label.calc__options-item(for="comfort1") 
+//-               input(type="checkbox" id="comfort1" name="Глухая стена 3х3")
+//-               span
+//-               +img("options/comf1.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Глухая стена 3х3
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="comfort2") 
+//-               input(type="checkbox" id="comfort2" name="Стена с арочным окном 3м")
+//-               span
+//-               +img("options/comf2.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с арочным окном 3м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="comfort3") 
+//-               input(type="checkbox" id="comfort3" name="Стена с дверью- скруткой 3м")
+//-               span
+//-               +img("options/comf2.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с дверью- скруткой 3м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="comfort4") 
+//-               input(type="checkbox" id="comfort4" name="Стена с распашной дверью на молнии")
+//-               span
+//-               +img("options/comf3.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с распашной дверью на молнии
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="comfort5") 
+//-               input(type="checkbox" id="comfort5" name="Стена с широким окном 3 м")
+//-               span
+//-               +img("options/comf4.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена с широким окном 3 м
+//-                 .calc__options-price #[span 5 500] ₽
+//-             label.calc__options-item(for="comfort6") 
+//-               input(type="checkbox" id="comfort6" name="Стена — москитная сетка 3 м")
+//-               span
+//-               +img("options/comf5.png")
+//-               .calc__options-info 
+//-                 .calc__options-title Стена — москитная сетка 3 м
+//-                 .calc__options-price #[span 5 500] ₽
+
+
+//-       .calc__result 
+
+//-         .calc__result-block
+//-           h5 Базовый комплект (без стен):
+//-           ul
+//-             li Каркас 3,0х3,0 м из прямоугольного алюминиевого профиля 40 мм
+//-             li Крыша 3,0х3,0 м из пожаробезопасного полиэстера 600D
+//-             li Сумка на колёсах для шатра 3,0х3,0 м из полиэстера 600D
+//-             li Комплект крепежа в грунт (стропы и колышки) в чехле
+//-         .calc__result-block.calc__result-block_options(data-block="main")
+//-           h5 Опции
+//-           ul
+//-         .calc__result-block.calc__result-block_comfort(data-block="comfort")
+//-           h5 Дополнительные опции
+//-           ul
+//-         .calc__result-bottom
+//-           div
+//-             label Цена:
+//-             .calc__result-price от #[span 59 700] ₽
+//-           button.primary-btn(type=submit) Купить
+
+
+
+
+
+
+include ../callback

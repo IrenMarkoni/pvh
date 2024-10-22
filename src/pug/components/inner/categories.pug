@@ -1,0 +1,28 @@
+- let breadcrumb = ["Главная", "Продукция"];
+
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Продукция
+section.section.categories 
+  .container 
+    .categories__content.categories__content_3
+      a.categories-card(href="")
+        h5.categories-card__title Мягкие окна&nbsp;→
+        +img("categories/cat1.png")
+      a.categories-card(href="")
+        h5.categories-card__title Москитные сетки&nbsp;→
+        +img("categories/cat10.png")
+      a.categories-card(href="/product2.html")
+        h5.categories-card__title Мобильные шатры&nbsp;→
+        +img("categories/cat3.png")
+      a.categories-card(href="")
+        h5.categories-card__title Полосовые завесы ПВХ&nbsp;→
+        +img("categories/cat4.png")
+      a.categories-card(href="")
+        h5.categories-card__title Шторы для автомоек&nbsp;→
+        +img("categories/cat5.png")
+      a.categories-card(href="")
+        h5.categories-card__title Скатерти и покрытия на стол&nbsp;→
+        +img("categories/cat6.png")
+include ../callback

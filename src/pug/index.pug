@@ -1,0 +1,18 @@
+extends layout/main.pug
+
+append variables
+  - var title = 'Практика';
+
+block content
+
+  include components/index/hero.pug
+  include components/index/index-about.pug
+  include components/index/index-benefits.pug
+  include components/index/index-works.pug
+  include components/index/index-steps.pug
+  include components/index/index-categories.pug
+  include components/index/index-certificates.pug
+  include components/index/index-accordeon.pug
+  include components/callback.pug
+append styles
+  +style('index.css')

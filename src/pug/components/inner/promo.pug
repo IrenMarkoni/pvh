@@ -1,0 +1,22 @@
+- let breadcrumb = ["Главная", "Акции"];
+section.page-top 
+  .container 
+    +breadcrumbs(breadcrumb) 
+    h1 Акции
+
+section.section.promo
+  .container 
+    .promo__content 
+      .promo__item
+        .promo__baner
+          +img("promo/1.png")
+        .promo__info
+          p Заключите Договор на производство и монтаж мягких окон в период с 25.12.2023 по 01.03.2024 г.
+          a.primary-btn Подробнее
+      .promo__item
+        .promo__baner
+          +img("promo/2.png")
+        .promo__info
+          p Заключите Договор на производство и монтаж мягких окон в период с 27.09.2023 по 27.10.2023 г.
+          a.primary-btn Подробнее
+include ../callback

@@ -1,0 +1,16 @@
+.modal(data-modal="callback")
+  .modal__close-btn
+
+  .modal__title Заказать звонок
+  p Заполните форму и мы перезвоним вам в течение 15 минут
+  form.modal__form
+    .custom-input
+      .custom-input__icon
+        +svg("name")
+      input(type="text" name="name" placeholder="Имя")
+    .custom-input
+      .custom-input__icon
+        +svg("phone")
+      input(type="text" name="phone" placeholder="Телефон" data-tel-input)
+    button.primary-btn(type="submit") Оставить заявку
+    .agreement Нажимая кнопку, я даю согласие на обработку #[a персональных данных]

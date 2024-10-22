@@ -1,0 +1,125 @@
+.callback {
+  // padding: 48px 0;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    align-items: center;
+    justify-content: space-between;
+    // gap: 130px;
+  }
+  .socials {
+    display: grid;
+    grid-template-columns: repeat(3, 36px);
+    gap: 12px;
+    margin: 8px 0 0 0;
+  }
+  .socials__item {
+    height: 36px;
+  }
+
+  h2 {
+    max-width: 580px;
+    line-height: 48px;
+  }
+  h2 + p:not(.subtext) {
+    margin: 12px 0 28px 0;
+  }
+  .callback-form {
+    border: 1px solid rgba(0, 109, 254, 0.2);
+    padding: 56px;
+    margin: 0 0 0 103px;
+  }
+}
+.callback-form {
+  border-radius: 28px;
+  background: #fff;
+  .primary-btn {
+    width: 100%;
+  }
+  .custom-input + .primary-btn {
+    margin: 20px 0 0 0;
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 20px 0 0 0;
+  }
+}
+.subtext {
+  color: #001f49;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+h2 + .subtext {
+  margin: 28px 0 8px 0;
+}
+.info + .callback {
+  padding: 40px 0 80px 0;
+}
+@media (max-width: 1200px) {
+  .callback {
+    .callback-form {
+      margin: 0;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .callback {
+    &__content {
+      grid-template-columns: 100%;
+    }
+    .callback-form {
+      padding: 40px;
+      .primary-btn {
+        padding: 15px;
+      }
+    }
+  }
+  .callback-form {
+    padding: 40px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px 8px;
+      align-items: center;
+      .custom-input + .custom-input {
+        margin: 0;
+      }
+      .custom-input + .primary-btn {
+        margin: 0;
+        order: 3;
+      }
+      .agreement {
+        margin: 0;
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  .callback {
+    .callback-form__wrapper {
+      grid-template-columns: 100%;
+      .custom-input + .primary-btn {
+        order: unset;
+      }
+    }
+  }
+}
+@media (max-width: 660px) {
+  .callback-form {
+    padding: 16px;
+    &__wrapper {
+      grid-template-columns: 100%;
+      gap: 10px;
+    }
+  }
+  .callback {
+    .callback-form {
+      padding: 16px;
+    }
+  }
+}
